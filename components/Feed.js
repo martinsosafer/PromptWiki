@@ -69,6 +69,10 @@ const Feed = () => {
     setSearchedResults(searchResult);
   };
 
+   useEffect(() => {
+    // This effect will run on every mount and re-mount of the component
+    fetchPosts();
+  }, []);
   return (
     <section className="feed">
       <form className="relative w-full flex-center">
