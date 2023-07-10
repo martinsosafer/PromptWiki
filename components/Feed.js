@@ -36,6 +36,9 @@ const Feed = () => {
     }
     fetchPosts();
   }, [])
+   useEffect(() => {
+    fetchPosts();
+  });
 
      const filterPrompts = (searchtext) => {
     const regex = new RegExp(searchtext, "i"); 
